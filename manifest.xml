@@ -1,0 +1,60 @@
+﻿<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns="https://github.com" versionCode="0.1,1.1">
+	<application setting="true">
+		<name><![CDATA[测试]]></name>
+		<identifie><![CDATA[we_addons]]></identifie>
+		<version><![CDATA[1.0.1]]></version>
+		<type><![CDATA[private]]></type>
+		<ability><![CDATA[内测]]></ability>
+		<description><![CDATA[测试人员]]></description>
+		<author><![CDATA[]]></author>
+		<url><![CDATA[https://github.com]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="shortvideo" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="unsubscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="view" />
+			<message type="merchant_order" />
+		</subscribes>
+		<handles>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="shortvideo" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="merchant_order" />
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="商城入口" do="admin" state="" direct="false" />
+		</cover>
+		<menu call="getMenus">
+		</menu>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[sql/qdz.php]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>
+

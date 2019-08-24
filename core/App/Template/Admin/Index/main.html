@@ -1,0 +1,59 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-07-10 11:31:30
+ * @LastEditTime: 2019-08-24 16:39:55
+ * @LastEditors: Please set LastEditors
+ -->
+<div class="layui-row layui-col-space15">
+    <div class="layui-col-md8">
+        <div class="layui-card ">
+            <div class="layui-card-header"><b>技术支持</b><span>Tech&nbsp;support</span></div>
+            <div class="layui-card-body">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>技术支持:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>在线沟通:</td>
+                        <td>QQ:&nbsp;&nbsp;&nbsp;&nbsp;邮箱:</td>
+                    </tr>
+                    <tr>
+                        <td>最新动态:</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-md4 ">
+        <div class="layui-card brad-10">
+            <div class="layui-card-header"><b>系统信息</b></div>
+            <div class="layui-card-body layui-text">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        {loop $data $index $item}
+                        <tr>
+                            <td>{$index}</td>
+                            <td>
+                                {$item}
+                            </td>
+                        </tr>
+                        {/loop}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
